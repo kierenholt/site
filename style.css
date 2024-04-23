@@ -1,0 +1,153 @@
+:root {
+  --light-blue: #00d2ff;
+  --mid-blue: #009abb;
+  --mid-blue-transparent: #009abbcc;
+  --dark-blue: #009abb;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Sans-serif;
+  color: #ddd;
+  background-color: black;
+}
+
+div.top {
+  height: 50px;
+  background-color: #000;
+  border-bottom: solid 1px #666;
+}
+
+div.middle {
+  background-image: url("images/bg.jpg");
+  min-height: 70vh;
+  padding-top: 10vh;
+}
+
+div.bottom {
+  height: 50px;
+  border-top: solid 1px #ccc;
+  background-color: #000;
+}
+
+div.left-margin {
+  margin: 0 0 0 10vw;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Vollkorn", serif;
+  font-weight: 500;
+  font-size: 200%;
+  filter: drop-shadow(0.3rem 0.2rem 0.2rem #000);
+  
+}
+
+.adverb1, .adverb2, .adverb3 {
+  color: var(--mid-blue);
+  font-weight: bold;
+  font-style: italic;
+} 
+
+span.transparent {
+  color: #0000;
+}
+
+h1.margin-top {
+  margin-top: 1.5rem;
+}
+
+button.start-enquiry {
+  background-color: var(--mid-blue-transparent);
+  border: #666 2px;
+  border-style: ridge;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 120%;
+}
+
+button.start-enquiry:hover, button.show-details:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+button.show-details {
+  border: #666 2px;
+  padding: 1rem;
+  border: #666 2px;
+  border-style: ridge;
+  border-radius: 1rem;
+  font-size: 120%;
+  background-color: #fff6;
+}
+
+div.button-spacer {
+  flex-grow: 1;
+  border: red 1px;
+  width: 10px;
+}
+
+div.buttons {
+  margin-top: 10vh;
+  margin-right: 10vw;
+  display: flex;
+  
+}
+
+p.company {
+  float: right;
+  margin: 0;
+  margin-right: 5vw;
+  vertical-align: center;
+  height: 50px;
+  font-size: 100%;
+}
+
+p.company a {
+  color: #ccc !important;
+  text-decoration: none;
+}
+
+img.logo {
+  height: 30px;
+  margin: 0 0 0 15px;
+  transform: translateY(7px);
+}
+
+.fade-in { animation: fadeInText 2s; }
+
+@keyframes fadeInText {
+  0% { 
+    opacity: 0; 
+    transform: translateY(10%);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0%);
+  }
+}
+
+.fade-in-bg  { animation: fadeInBg 1s; }
+
+@keyframes fadeInBg {
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
+.displayNone {
+  opacity: 0;
+}
+
+p.detail {
+  margin: 0 0 0 5rem;
+  padding: 0 0 0 0;
+  color: var(--mid-blue);
+  font-weight: bold;
+  border-bottom: solid 1px #555;
+}
