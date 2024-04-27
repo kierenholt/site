@@ -20,19 +20,7 @@
     </div>
     <div class="middle fade-in-bg bg1">
         <div class="left-margin fade-in">
-            <h1>Your free venue search,</h1>
-            <h1 >done <span class="adverb1">efficiently</span></h1>
-            <p class="detail displayNone">Over 90% of our venue searches are completed in under 24 hours. Together, we can beat that deadline!</p>
-            <h1 class="margin-top"><span class="transparent">done</span> <span class="adverb2">effortlessly</span></h1>
-            <p class="detail displayNone">Planning an event is stressful. Allow us to share the burden so you can focus on business priorities.</p>
-            <h1 class="margin-top"><span class="transparent">done</span> <span class="adverb3">individually</span></h1>
-            <p class="detail displayNone">Every event is unique. We excel in providing tailored solutions that align with your goals and theme.</p>
-
-            <div class="buttons">
-                <button class="show-details" onclick="showdetails()">More info</button>
-                <div class="button-spacer"></div>
-                <button class="start-enquiry" onclick="goToContact()">Start your enquiry today</button>
-            </div>
+            <h1>Thank you. Your enquiry has been received and you will hear from one of our venue search specialists very shortly.</h1>
         </div>
     </div>
     <div class="bottom">
@@ -44,19 +32,6 @@
         <img class="client" src="images/vmware.png" alt="Vmware">
     </div>
 
-    <script>
-    function showdetails() {
-        let foundDetails = document.getElementsByClassName('detail');
-        for (let item of foundDetails) {
-            item.classList.remove("displayNone");
-            item.classList.add("fade-in");
-        }
-    }
-
-    function goToContact() {
-        window.location.href='contact.php';
-    }
-    </script>
 
 </body>
 </html>
